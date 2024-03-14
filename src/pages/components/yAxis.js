@@ -1,8 +1,9 @@
 
 function YAxis(props){
     const { yScale, height, axisLable } = props;
-    const ticks = yScale.ticks();
+    
     if(yScale){
+        const ticks = yScale.ticks();
         return <g>
         {/* //the if(yScale){...} means when xScale is not null, the component will return the y-axis; otherwise, it returns <g></g>
         //we use the if ... else ... in this place so that the code can work with the SSR in Next.js;
